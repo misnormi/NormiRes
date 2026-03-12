@@ -1,13 +1,11 @@
 {
-  "name": "normires-client",
+  "name": "normires",
   "private": true,
-  "version": "1.0.0",
-  "type": "module",
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "preview": "vite preview"
-  },
+    "build": "cd client && npm ci && npm run build && cd ../server && npm ci",
+    "start": "cd server && node index.js"
+  }
+,
   "dependencies": {
     "chart.js": "^4.4.0",
     "react": "^18.3.1",
