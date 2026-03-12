@@ -1,4 +1,13 @@
 {
+  "name": "normires",
+  "private": true,
+  "scripts": {
+    "build": "cd client && npm ci && npm run build && cd ../server && npm ci",
+    "start": "cd server && node index.js"
+  },
+  "dependencies": {}
+},
+{
   "name": "normires-server",
   "version": "1.0.0",
   "description": "NormiRes API – auth, file upload, charts",
